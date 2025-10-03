@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SARC: Standalone Robotics — Sound-based Robot Collaboration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="container hero">
+    <h1>SARC: Standalone Robotics — Sound-based Robot Collaboration with On-Device FM</h1>
+    <p class="authors">
+      <span>Semin Ahn</span>, <span>…</span>
+    </p>
+    <p class="affil">Seoul National University, …</p>
+
+    <div class="cta">
+      <a class="btn" href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" rel="noopener">Paper</a>
+      <a class="btn" href="https://github.com/project-roco/your-code-repo" target="_blank" rel="noopener">Code</a>
+      <a class="btn" href="#appendix">Appendix</a>
+      <a class="btn" href="#video">Video</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>
+        We integrate <strong>3DAR</strong> (acoustic SSL), <strong>inaudible MFSK</strong> comms, and an
+        <strong>on-device multi-agent</strong> framework to enable network-independent multi-robot collaboration.
+      </p>
+      <img class="teaser" src="assets/teaser.jpg" alt="Teaser figure" />
+    </section>
+
+    <section id="video">
+      <h2>Video</h2>
+      <!-- Prefer a YouTube embed; keep local MP4 as fallback -->
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Demo video"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <details>
+        <summary>Local MP4 fallback</summary>
+        <video src="assets/demo.mp4" controls preload="metadata" style="width:100%"></video>
+      </details>
+    </section>
+
+    <section id="logs">
+      <h2>Agent Logs</h2>
+      <div class="log-grid">
+        <div class="card">
+          <h3>Leader (Vision Expert)</h3>
+<pre>[Plan] Look at the backside → Advance 0.5 m → Yield
+[Parse] Subtasks = Orient, Advance, Yield
+[Action] ...
+</pre>
+          <a class="link" href="logs/leader_full.txt">Full log ↗</a>
+        </div>
+        <div class="card">
+          <h3>Follower (Sound Expert)</h3>
+<pre>[SSL] ITD=…  GCE=0.33°, Δt=6.1 ms
+[Comm] RRC protocol #13 (MFSK) decoded
+[Exec] ...
+</pre>
+          <a class="link" href="logs/follower_full.txt">Full log ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="appendix">
+      <h2>Appendix / Resources</h2>
+      <ul>
+        <li><a href="poster.pdf">Poster</a> · <a href="slides.pdf">Slides</a> · <a href="supplementary.zip">Supplementary</a></li>
+        <li><a href="https://zenodo.org/record/XXXXXXXX">Dataset (Zenodo)</a></li>
+      </ul>
+    </section>
+
+    <section id="ack">
+      <h2>Acknowledgements</h2>
+      <p>
+        This work was supported by the Korea Institute for Advancement of Technology (KIAT)
+        (RS-2024-00409092, 2024 HRD Program for Industrial Innovation) and
+        the AI Autonomous Manufacturing SDM Platform Technology Development Program
+        (RS-2025-15458052) funded by MOTIE, Korea.
+      </p>
+    </section>
+
+    <section id="bibtex">
+      <h2>BibTeX</h2>
+<pre class="bibtex">
+@inproceedings{Ahn2025SARC,
+  title   = {Standalone Robotics: Sound-based Robot Collaboration System with On-Device Foundation Model},
+  author  = {Ahn, Semin and ...},
+  booktitle = {Conference/Journal},
+  year    = {2025},
+  url     = {https://project-roco.github.io/your-project/}
+}
+</pre>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Please reach out to <a href="mailto:you@univ.ac.kr">you@univ.ac.kr</a>.</p>
+    </section>
+  </main>
+
+  <footer class="container foot">
+    <span>© 2025 Project-RoCo</span>
+  </footer>
+</body>
+</html>
